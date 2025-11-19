@@ -3,18 +3,25 @@
 import os
 import psycopg2
 from psycopg2.extras import RealDictCursor
+from dotenv import load_dotenv
+
+# Carrega o .env na inicialização do módulo
+load_dotenv()
 
 def get_connection():
     """
-    Abre e retorna uma conexão com o banco de dados PostgreSQL.
-    Usa variáveis de ambiente para não expor credenciais no código.
+    Retorna uma conexão com o Postgres do Supabase.
+    Usa a variável DATABASE_URL definida no .env.
     """
+    database_url = os.getenv("DATABASE_URL")
+    if not database_url:
+        raise RuntimeError("DATABASE_URL não encontrado no .env")
+
+    sslmode = os.getenv("SUPABASE_DB_SSLMODE", "require")
+
     conn = psycopg2.connect(
-        host=os.getenv("DB_HOST", "localhost"),
-        port=os.getenv("DB_PORT", "5432"),
-        user=os.getenv("DB_USER", "postgres"),
-        password=os.getenv("DB_PASSWORD", "postgres"),
-        dbname=os.getenv("DB_NAME", "farmtech_fase2"),
-        cursor_factory=RealDictCursor
+        database_url,
+        cursor_factory=RealDictCursor,
+        sslmode=sslmode,  # Supabase exige SSL
     )
     return conn
