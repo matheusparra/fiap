@@ -2,9 +2,7 @@ import sqlite3
 from datetime import datetime
 from typing import List
 from app.models import Leitura, LeituraCreate
-# Ajuste o import do DB conforme sua estrutura real. 
-# Se get_connection não existir em db_utils, use sqlite3.connect('farm.db')
-from fase2.db_utils import get_connection 
+from app.database import get_connection
 
 def registrar_leitura(payload: LeituraCreate) -> Leitura:
     conn = get_connection()

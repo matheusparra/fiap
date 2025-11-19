@@ -1,0 +1,85 @@
+sector,type,value
+Talhão A (Soja),co2_emission,147.21827732549832
+Talhão A (Soja),co2_emission,155.60153709190163
+Talhão A (Soja),co2_emission,143.1937043098497
+Talhão A (Soja),co2_emission,139.15866245307848
+Talhão A (Soja),co2_emission,136.27234886350192
+Talhão A (Soja),co2_emission,155.70889013959297
+Talhão A (Soja),co2_emission,135.82650956834277
+Talhão A (Soja),crop_density,27.535163312382444
+Talhão A (Soja),crop_density,32.2706762223064
+Talhão A (Soja),crop_density,32.257889268741195
+Talhão A (Soja),crop_density,32.13296028419411
+Talhão A (Soja),crop_density,32.79199060206334
+Talhão A (Soja),crop_density,27.797653071433086
+Talhão A (Soja),crop_density,27.749278934127307
+Talhão A (Soja),luminosity,53846.1682081355
+Talhão A (Soja),luminosity,42328.99847999735
+Talhão A (Soja),luminosity,46099.56985691078
+Talhão A (Soja),luminosity,44012.596065439604
+Talhão A (Soja),luminosity,57614.22141647374
+Talhão A (Soja),luminosity,42631.67662890345
+Talhão A (Soja),luminosity,49426.426579520295
+Talhão B (Milho),co2_emission,384.6951870638708
+Talhão B (Milho),co2_emission,421.52691000304844
+Talhão B (Milho),co2_emission,390.0625786749309
+Talhão B (Milho),co2_emission,382.0312751230689
+Talhão B (Milho),co2_emission,388.67442436907265
+Talhão B (Milho),co2_emission,372.8579237136062
+Talhão B (Milho),co2_emission,411.31010020925635
+Talhão B (Milho),crop_density,6.560627468755603
+Talhão B (Milho),crop_density,5.653038758584334
+Talhão B (Milho),crop_density,5.472547241402812
+Talhão B (Milho),crop_density,5.412019789361413
+Talhão B (Milho),crop_density,5.510766506054008
+Talhão B (Milho),crop_density,6.560949396771699
+Talhão B (Milho),crop_density,6.063334430207004
+Talhão B (Milho),luminosity,47975.6992845355
+Talhão B (Milho),luminosity,56857.0753412823
+Talhão B (Milho),luminosity,51377.704775523765
+Talhão B (Milho),luminosity,42527.921399985426
+Talhão B (Milho),luminosity,47032.016518505145
+Talhão B (Milho),luminosity,54881.14815875701
+Talhão B (Milho),luminosity,46002.20289889995
+Pasto Sul (Gado),co2_emission,1209.8701421824494
+Pasto Sul (Gado),co2_emission,1269.5048727177805
+Pasto Sul (Gado),co2_emission,1179.3622805129967
+Pasto Sul (Gado),co2_emission,1227.4519167511137
+Pasto Sul (Gado),co2_emission,1234.4804981240309
+Pasto Sul (Gado),co2_emission,1134.9256253665505
+Pasto Sul (Gado),co2_emission,1200.0261440551114
+Pasto Sul (Gado),crop_density,1.0892396905906658
+Pasto Sul (Gado),crop_density,0.9320995977103625
+Pasto Sul (Gado),crop_density,0.9730718587675318
+Pasto Sul (Gado),crop_density,1.048857196506725
+Pasto Sul (Gado),crop_density,1.0932342827385744
+Pasto Sul (Gado),crop_density,0.9039466317821765
+Pasto Sul (Gado),crop_density,1.072336375925616
+Pasto Sul (Gado),luminosity,41011.62571729372
+Pasto Sul (Gado),luminosity,57730.739043129295
+Pasto Sul (Gado),luminosity,54251.528171493046
+Pasto Sul (Gado),luminosity,38546.604569783216
+Pasto Sul (Gado),luminosity,48400.262279825976
+Pasto Sul (Gado),luminosity,55497.7741162847
+Pasto Sul (Gado),luminosity,47243.69408019322
+Reserva Legal,co2_emission,-454.1692514107283
+Reserva Legal,co2_emission,-463.4490414625745
+Reserva Legal,co2_emission,-530.1953003347944
+Reserva Legal,co2_emission,-526.5014186250166
+Reserva Legal,co2_emission,-505.3818533821332
+Reserva Legal,co2_emission,-539.3748141048852
+Reserva Legal,co2_emission,-522.4982368148023
+Reserva Legal,crop_density,100.65940045767817
+Reserva Legal,crop_density,98.60509984992919
+Reserva Legal,crop_density,102.73597318847338
+Reserva Legal,crop_density,105.97250218317043
+Reserva Legal,crop_density,108.6976826649572
+Reserva Legal,crop_density,100.32436014607268
+Reserva Legal,crop_density,95.27950920059352
+Reserva Legal,luminosity,15575.000357855652
+Reserva Legal,luminosity,15008.638983788316
+Reserva Legal,luminosity,13305.942696100574
+Reserva Legal,luminosity,17242.14758002158
+Reserva Legal,luminosity,16181.215138320154
+Reserva Legal,luminosity,13840.66018512459
+Reserva Legal,luminosity,18381.506286774933

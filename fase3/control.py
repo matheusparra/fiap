@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from time import sleep
 
-from ..fase2 import db_utils
+from fase2 import db_utils
 
 
 # Configurações de limites
