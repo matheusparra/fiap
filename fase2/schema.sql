@@ -1,27 +1,17 @@
--- Esquema de banco de dados para o sistema FarmTech (Fase 2)
--- Tabela de sensores
+-- Tabela de sensores instalados na fazenda
 CREATE TABLE IF NOT EXISTS sensors (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT NOT NULL,
-    type TEXT NOT NULL,
-    description TEXT
+    id          uuid DEFAULT gen_random_uuid() PRIMARY KEY,
+    name        text NOT NULL,
+    type        text NOT NULL,      -- ex: "umidade", "temperatura", "bem-estar"
+    location    text NOT NULL,      -- ex: "estufa 1", "curral A"
+    created_at  timestamptz DEFAULT now()
 );
 
--- Leituras de sensores
-CREATE TABLE IF NOT EXISTS readings (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    sensor_id INTEGER NOT NULL,
-    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-    moisture REAL,
-    ph REAL,
-    nutrients REAL,
-    FOREIGN KEY(sensor_id) REFERENCES sensors(id)
-);
-
--- Eventos de irrigação e alertas
-CREATE TABLE IF NOT EXISTS events (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
-    type TEXT NOT NULL,
-    description TEXT
+-- Leituras de cada sensor
+CREATE TABLE IF NOT EXISTS sensor_readings (
+    id           bigserial PRIMARY KEY,
+    sensor_id    uuid REFERENCES sensors(id),
+    value        numeric(10, 2) NOT NULL,
+    unit         text NOT NULL,    -- ex: "%", "°C", "pontos"
+    recorded_at  timestamptz DEFAULT now()
 );
